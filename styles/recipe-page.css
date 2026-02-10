@@ -5,11 +5,17 @@
     width: 47rem;
     padding: 2.5rem;
     margin: 7rem auto;
+    border-radius: var(--border-radius-20);
+}
+
+.recipe-img {
+    border-radius: var(--border-radius-20);
 }
 
 .preparation {
     background-color: var(--color-rose-50);
     padding: 1.5rem;
+    border-radius: var(--border-radius-20);
 }
 
 .preparation___title {
@@ -57,7 +63,7 @@
     color: var(--color-stone-900);
     letter-spacing: 0.5px;
     margin-bottom: 1.5rem;
-    font-size: 2.5em;
+    font-size: 2.5rem;
 }
 
 .title--secondary {
@@ -82,10 +88,6 @@
     margin-bottom: 1.75rem;
 }
 
-.rounded {
-    border-radius: var(--border-radius-20);
-}
-
 .section {
     margin-bottom: 1.75rem;
 }
@@ -98,4 +100,37 @@
 
 .attribution a {
     color: var(--color-rose-800);
+}
+
+@media (max-width: 375px) {
+    .recipe-card {
+        width: auto;
+        margin: 0;
+        padding: 12rem 2rem 2rem;
+        border-radius: 0;
+    }
+
+    .recipe-img {
+        border-radius: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .title--primary {
+        font-size: 2rem;
+        margin-bottom: 1.25rem;
+    }
+
+    .title--secondary {
+        margin-bottom: 1rem;
+    }
+
+    .section {
+        margin-bottom: 1.5rem;
+    }
+
+    .divider {
+        margin-bottom: 1.5rem;
+    }
 }
