@@ -4,7 +4,7 @@
     font-size: 1rem;
     width: 47rem;
     padding: 2.5rem;
-    margin: 7rem auto;
+    margin: 7.5rem auto;
     border-radius: var(--border-radius-20);
 }
 
@@ -54,6 +54,11 @@
 .list-item {
     margin-bottom: 0.5rem;
     padding-left: 1rem;
+}
+
+.marker--brown::marker { 
+    color: var(--color-brown-800);
+    font-weight: var(--weight-boldest);
 }
 
 .title--primary {
